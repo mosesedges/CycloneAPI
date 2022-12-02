@@ -57,6 +57,6 @@ class Answer(Updated):
     is_right  = models.BooleanField(default=False)
     
     class Meta:
-        verbose_name = _('Answers')
+        verbose_name = _('Answer')
         verbose_name_plural = _('Answers')
         ordering = ['id']
