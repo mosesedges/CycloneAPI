@@ -29,6 +29,7 @@ class QuestionAdmin(admin.ModelAdmin):
     fields = [
         'title',
         'quiz',
+        'difficulty',
     ]
 
     list_display = [

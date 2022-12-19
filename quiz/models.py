@@ -20,6 +20,10 @@ class Quizzes(models.Model):
         verbose_name = _('Quiz')
         verbose_name_plural = _('Quizzes')
         ordering = ['id']
+        
+        def __str__(self):
+            return self.title
+        
     
 class Updated(models.Model):
     date_updated = models.DateTimeField(auto_now=True)
@@ -60,3 +64,6 @@ class Answer(Updated):
         verbose_name = _('Answer')
         verbose_name_plural = _('Answers')
         ordering = ['id']
+        
+        def __str__(self):
+            return self.answer_test
